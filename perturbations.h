@@ -138,8 +138,6 @@ struct perturbs
 
   double A_s, n_s, k_pivot; /**< Needed if dmeff_Vrms_dynamic or dmeff_Vflow_dynamic is on. Taken from primordial structure. */
 
-=======
->>>>>>> master
   short has_cl_cmb_temperature;       /**< do we need \f$ C_l \f$'s for CMB temperature? */
   short has_cl_cmb_polarization;      /**< do we need \f$ C_l \f$'s for CMB polarization? */
   short has_cl_cmb_lensing_potential; /**< do we need \f$ C_l \f$'s for CMB lensing potential? */
