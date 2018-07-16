@@ -13,10 +13,7 @@
 #include "primordial.h"
 #include "spectra.h"
 #include "nonlinear.h"
-<<<<<<< HEAD
-=======
 #include "nonlinear_pt.h"
->>>>>>> master
 #include "lensing.h"
 #include "output.h"
 
@@ -140,11 +137,7 @@
 
 enum target_names {theta_s, Omega_dcdmdr, omega_dcdmdr, Omega_scf, Omega_ini_dcdm, omega_ini_dcdm, sigma8};
 enum computation_stage {cs_background, cs_thermodynamics, cs_perturbations,
-<<<<<<< HEAD
-                        cs_primordial, cs_nonlinear, cs_transfer, cs_spectra};
-=======
                         cs_primordial, cs_nonlinear, cs_nonlinear_pt, cs_transfer, cs_spectra};
->>>>>>> master
 #define _NUM_TARGETS_ 7 //Keep this number as number of target_names
 
 struct input_pprpba {
@@ -182,10 +175,7 @@ extern "C" {
 		 struct primordial *ppm,
 		 struct spectra *psp,
 		 struct nonlinear *pnl,
-<<<<<<< HEAD
-=======
          struct nonlinear_pt *pnlpt,
->>>>>>> master
 		 struct lensing *ple,
 		 struct output *pop,
 		 ErrorMsg errmsg
@@ -201,10 +191,7 @@ extern "C" {
 		 struct primordial *ppm,
 		 struct spectra *psp,
 		 struct nonlinear *pnl,
-<<<<<<< HEAD
-=======
          struct nonlinear_pt *pnlpt,
->>>>>>> master
 		 struct lensing *ple,
 		 struct output *pop,
 		 ErrorMsg errmsg
@@ -220,10 +207,7 @@ extern "C" {
                             struct primordial *ppm,
                             struct spectra *psp,
                             struct nonlinear *pnl,
-<<<<<<< HEAD
-=======
                             struct nonlinear_pt *pnlpt,
->>>>>>> master
                             struct lensing *ple,
                             struct output *pop,
                             ErrorMsg errmsg
@@ -237,10 +221,7 @@ extern "C" {
 			   struct primordial *ppm,
 			   struct spectra *psp,
 			   struct nonlinear *pnl,
-<<<<<<< HEAD
-=======
                struct nonlinear_pt *pnlpt,
->>>>>>> master
 			   struct lensing *ple,
 			   struct output *pop
 			   );

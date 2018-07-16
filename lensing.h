@@ -111,12 +111,8 @@ extern "C" {
 		   struct precision * ppr,
                    struct perturbs * ppt,
                    struct spectra * psp,
-<<<<<<< HEAD
-		   struct nonlinear * pnl,
-=======
                    struct nonlinear_pt * pnlpt,
                    struct nonlinear * pnl,
->>>>>>> master
                    struct lensing * ple
                    );
 

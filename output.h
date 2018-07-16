@@ -86,10 +86,7 @@ extern "C" {
                   struct primordial * ppm,
                   struct transfers * ptr,
                   struct spectra * psp,
-<<<<<<< HEAD
-=======
                   struct nonlinear_pt * pnlpt,
->>>>>>> master
                   struct nonlinear * pnl,
                   struct lensing * ple,
                   struct output * pop
@@ -116,9 +113,6 @@ extern "C" {
                    struct spectra * psp,
                    struct output * pop
                    );
-<<<<<<< HEAD
-=======
-   
     
     int output_pk_nl_pt(
                      struct background * pba,
@@ -127,8 +121,6 @@ extern "C" {
                      struct output * pop
                      );
     
-    
->>>>>>> master
 
   int output_tk(
                 struct background * pba,
@@ -192,8 +184,6 @@ extern "C" {
                           char * first_line,
                           double z
                           );
-<<<<<<< HEAD
-=======
     
     int output_open_pk_nlpt_file(
                             struct background * pba,
@@ -205,19 +195,12 @@ extern "C" {
                             double z
                             );
     
->>>>>>> master
 
   int output_one_line_of_pk(
                             FILE * tkfile,
                             double one_k,
                             double one_pk
                             );
-<<<<<<< HEAD
-
-  int output_open_pk_nl_file(
-                             struct background * pba,
-                             struct nonlinear * pnl,
-=======
     
     int output_one_line_many_columns_of_pk(
                               FILE * tkfile,
@@ -235,7 +218,6 @@ extern "C" {
   int output_open_pk_nl_file(
                              struct background * pba,
                              struct nonlinear_pt * pnlpt,
->>>>>>> master
                              struct output * pop,
                              FILE ** pkfile,
                              FileName filename,
