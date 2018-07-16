@@ -47,7 +47,7 @@ struct background
 
   double Omega0_cdm; /**< \f$ \Omega_{0 cdm} \f$: cold dark matter */
 
-<<<<<<< HEAD
+
   double Omega0_dmeff; /**< \f$ \Omega_{0 dmeff} \f$ : dark matter with effective interactions */
 
   double m_dmeff; /**< \f$ \m_{dmeff} \f$ : mass of dark matter with effective interactions */
@@ -63,8 +63,6 @@ struct background
   double z_rate_off_dmeff; /**< \f$ z_{offdmeff} \f$ : z below which to turn off rates of dark matter with effective interactions */
   double z_rate_on_dmeff; /**< \f$ z_{ondmeff} \f$ : z above which to turn off rates of dark matter with effective interactions */
 
-=======
->>>>>>> master
   double Omega0_lambda; /**< \f$ \Omega_{0_\Lambda} \f$: cosmological constant */
 
   double Omega0_fld; /**< \f$ \Omega_{0 de} \f$: fluid */
@@ -184,7 +182,7 @@ struct background
   int index_bg_rho_ur;        /**< relativistic neutrinos/relics density */
   int index_bg_rho_dcdm;      /**< dcdm density */
   int index_bg_rho_dr;        /**< dr density */
-<<<<<<< HEAD
+
   int index_bg_rho_dmeff;     /**< dmeff density */
 
   int index_bg_Tdmeff;        /**< dmeff temperature (estimate only, if T_b=T_photon always) */
@@ -196,8 +194,6 @@ struct background
   int index_bg_heat_chi_dmeff;/**< dmeff heating from relative velocity dissipation, contribution to dmeff (estimate only, if T_b=T_photon always) */
   int index_bg_heat_b_dmeff;  /**< dmeff heating from relative velocity dissipation, contribution to baryons (estimate only, if T_b=T_photon always) */
   int index_bg_cdmeff2;       /**< dmeff speed of sound squared (estimate only, if T_b=T_photon always) */
-=======
->>>>>>> master
 
   int index_bg_phi_scf;       /**< scalar field value */
   int index_bg_phi_prime_scf; /**< scalar field derivative wrt conformal time */
@@ -295,10 +291,9 @@ struct background
   //@{
 
   short has_cdm;       /**< presence of cold dark matter? */
-<<<<<<< HEAD
+
   short has_dmeff;     /**< presence of dark matter with effective interactions? */
-=======
->>>>>>> master
+
   short has_dcdm;      /**< presence of decaying cold dark matter? */
   short has_dr;        /**< presence of relativistic decay radiation? */
   short has_scf;       /**< presence of a scalar field? */
