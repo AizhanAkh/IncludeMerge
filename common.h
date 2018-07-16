@@ -7,9 +7,7 @@
 #include "float.h"
 #include "svnversion.h"
 #include <stdarg.h>
-<<<<<<< HEAD
 #include <gsl/gsl_sf_hyperg.h>
-=======
 
 
 #include <stdlib.h>
@@ -22,7 +20,6 @@
 #include <gsl/gsl_spline.h>
 #include <fftw3.h>
 
->>>>>>> master
 
 #ifdef _OPENMP
 #include "omp.h"
@@ -381,13 +378,10 @@ struct precision
    */
   double tol_background_integration;
 
-<<<<<<< HEAD
   /**
    * parameter controlling precision of dmeff temperature integration
    */
   double tol_Tdmeff_integration;
-=======
->>>>>>> master
 
   /**
    * parameter controlling how deep inside radiation domination must the
@@ -501,10 +495,7 @@ struct precision
   FileName hyrec_Alpha_inf_file;
   FileName hyrec_R_inf_file;
   FileName hyrec_two_photon_tables_file;
-<<<<<<< HEAD
 
-=======
->>>>>>> master
 /* @endcond */
   /* - for reionization */
 
@@ -768,16 +759,11 @@ struct precision
   /** @name - parameters related to non-linear computations */
 
   //@{
-<<<<<<< HEAD
-
-=======
-    
     
       /** parameters relevant for PT computation */
 
     int nmax_nlpt;
     
->>>>>>> master
   /** parameters relevant for HALOFIT computation */
 
   double halofit_min_k_nonlinear; /**< value of k in 1/Mpc below which

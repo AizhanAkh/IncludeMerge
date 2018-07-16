@@ -26,10 +26,7 @@
 #include "perturbations.h"
 #include "primordial.h"
 #include "nonlinear.h"
-<<<<<<< HEAD
-=======
 #include "nonlinear_pt.h"
->>>>>>> master
 #include "transfer.h"
 #include "spectra.h"
 #include "lensing.h"
