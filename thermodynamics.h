@@ -38,7 +38,6 @@ enum reionization_z_or_tau {
   reio_z,  /**< input = redshift */
   reio_tau /**< input = tau */
 };
-<<<<<<< HEAD
 /**
  * define the species with which dmeff interacts
  */
@@ -48,8 +47,6 @@ enum definition_dmeff_interacting_species {
   hydrogen, /**< include all hydrogen independently of ionization fraction */
   baryons /**< include all baryons as a single fluid with mean molecular weight mu*/
 };
-=======
->>>>>>> master
 
 /**
  * Two useful smooth step functions, for smoothing transitions in recfast.
@@ -83,11 +80,8 @@ struct thermo
 
   enum reionization_z_or_tau reio_z_or_tau; /**< is the input parameter the reionization redshift or optical depth? */
 
-<<<<<<< HEAD
   enum definition_dmeff_interacting_species dmeff_interacting_species; /**< define the species with which dmeff interacts */
 
-=======
->>>>>>> master
   double tau_reio; /**< if above set to tau, input value of reionization optical depth */
 
   double z_reio;   /**< if above set to z,   input value of reionization redshift */
@@ -168,7 +162,6 @@ struct thermo
   double annihilation_f_halo; /** takes the contribution of DM annihilation in halos into account*/
   double annihilation_z_halo; /** characteristic redshift for DM annihilation in halos*/
 
-<<<<<<< HEAD
   /** parameters for DMeff */
 
   double z_dmeff_decoupling; /* redshift at which Tdmeff transitions from scaling as (1+z) to scaling as (1+z)^2*/
@@ -180,19 +173,13 @@ struct thermo
   short  calculation_a_la_dvorkin_et_al; /* do we incorporate backreaction onto baryon temperature?*/
   //@}
   short sigma_dmeff_security; //flag to enforce a la dvorkin calculation in thermo when sigma_dmeff > 1e-35cm^2
-=======
-  //@}
 
->>>>>>> master
   /** @name - all indices for the vector of thermodynamical (=th) quantities stored in table */
 
   //@{
 
   int index_th_xe;            /**< ionization fraction \f$ x_e \f$ */
-<<<<<<< HEAD
   int index_th_xH;            /**< ionization fraction \f$ x_H \f$ */
-=======
->>>>>>> master
   int index_th_dkappa;        /**< Thomson scattering rate \f$ d \kappa / d \tau\f$ (units 1/Mpc) */
   int index_th_tau_d;         /**< Baryon drag optical depth */
   int index_th_ddkappa;       /**< scattering rate derivative \f$ d^2 \kappa / d \tau^2 \f$ */
@@ -207,7 +194,6 @@ struct thermo
   int index_th_ddcb2;         /**< second derivative wrt conformal time of squared baryon sound speed  \f$ d^2 [c_b^2] / d \tau^2 \f$ (only computed if some non0-minimal tight-coupling schemes is requested) */
   int index_th_rate;          /**< maximum variation rate of \f$ exp^{-\kappa}\f$, g and \f$ (d g / d \tau) \f$, used for computing integration step in perturbation module */
   int index_th_r_d;           /**< simple analytic approximation to the photon comoving damping scale */
-<<<<<<< HEAD
   int index_th_Tdmeff;        /**< dmeff temperature */
   int index_th_dkappa_dmeff;  /**< dmeff momentum exchange rate */
   int index_th_dkappaT_dmeff; /**< dmeff heat exchange rate */
@@ -216,8 +202,6 @@ struct thermo
   int index_th_heat_chi_dmeff;/**< dmeff heating from relative velocity dissipation, contribution to dmeff */
   int index_th_heat_b_dmeff;  /**< dmeff heating from relative velocity dissipation, contribution to baryons */
   int index_th_cdmeff2;       /**< dmeff speed of sound squared */
-=======
->>>>>>> master
   int th_size;                /**< size of thermodynamics vector */
 
   //@}
@@ -316,7 +300,6 @@ struct recombination {
 
   int index_re_z;          /**< redshift \f$ z \f$ */
   int index_re_xe;         /**< ionization fraction \f$ x_e \f$ */
-<<<<<<< HEAD
   int index_re_xH;         /**< ionization fraction \f$ x_H \f$ */
   int index_re_Tb;         /**< baryon temperature \f$ T_b \f$ */
   int index_re_cb2;        /**< squared baryon sound speed \f$ c_b^2 \f$ */
@@ -335,12 +318,10 @@ struct recombination {
   short  calculation_a_la_dvorkin_et_al; /* do we incorporate backreaction onto baryon temperature?*/
   short  calculation_a_la_munoz_et_al; /* do we incorporate backreaction onto baryon temperature?*/
   short  calculation_a_la_Kim; /* do we incorporate backreaction onto baryon temperature?*/
-=======
   int index_re_Tb;         /**< baryon temperature \f$ T_b \f$ */
   int index_re_cb2;        /**< squared baryon sound speed \f$ c_b^2 \f$ */
   int index_re_dkappadtau; /**< Thomson scattering rate \f$ d \kappa / d \tau \f$ (units 1/Mpc) */
   int re_size;             /**< size of this vector */
->>>>>>> master
 
   //@}
 
@@ -431,16 +412,12 @@ struct reionization {
 
   int index_re_z;          /**< redshift \f$ z \f$ */
   int index_re_xe;         /**< ionization fraction \f$ x_e \f$ */
-<<<<<<< HEAD
   int index_re_xH;         /**< ionization fraction \f$ x_H \f$ */
-=======
->>>>>>> master
   int index_re_Tb;         /**< baryon temperature \f$ T_b \f$ */
   int index_re_cb2;        /**< squared baryon sound speed \f$ c_b^2 \f$ */
   int index_re_dkappadtau; /**< Thomson scattering rate \f$ d \kappa / d \tau\f$ (units 1/Mpc) */
   int index_re_dkappadz;   /**< Thomson scattering rate with respect to redshift \f$ d \kappa / d z\f$ (units 1/Mpc) */
   int index_re_d3kappadz3; /**< second derivative of previous quantity with respect to redshift */
-<<<<<<< HEAD
   int index_re_Tdmeff;       /**< dmeff temperature */
   int index_re_dkappa_dmeff; /**< dmeff momentum exchange rate */
   int index_re_dkappaT_dmeff;/**< dmeff heat exchange rate */
@@ -450,10 +427,6 @@ struct reionization {
   int index_re_heat_b_dmeff;  /**< dmeff heating from relative velocity dissipation, contribution to baryons */
   int index_re_cdmeff2;      /**< dmeff speed of sound squared */
   int re_size;             /**< size of this vector */
-=======
-  int re_size;             /**< size of this vector */
-
->>>>>>> master
   //@}
 
   /** @name - table of the above variables at each redshift, and number of redshifts */
@@ -528,7 +501,6 @@ struct thermodynamics_parameters_and_workspace {
   struct background * pba;
   struct precision * ppr;
   struct recombination * preco;
-<<<<<<< HEAD
   struct thermo * pth;
   struct dmeff_thermo * pdmeff;
 
@@ -574,11 +546,6 @@ struct dmeff_parameters_and_workspace {
   /* workspace */
   double * pvecback;
   double * pvecthermo;
-=======
-
-  /* workspace */
-  double * pvecback;
->>>>>>> master
 
 };
 
@@ -612,10 +579,7 @@ extern "C" {
 			  );
 
   int thermodynamics_indices(
-<<<<<<< HEAD
 			     struct background * pba,
-=======
->>>>>>> master
 			     struct thermo * pthermo,
 			     struct recombination * preco,
 			     struct reionization * preio
@@ -649,12 +613,8 @@ extern "C" {
 					   double z,
 					   struct thermo * pth,
 					   struct reionization * preio,
-<<<<<<< HEAD
 					   double * xe,
 					   double * xH
-=======
-					   double * xe
->>>>>>> master
 					   );
 
   int thermodynamics_reionization(
@@ -663,10 +623,7 @@ extern "C" {
 				  struct thermo * pth,
 				  struct recombination * preco,
 				  struct reionization * preio,
-<<<<<<< HEAD
 				  struct dmeff_thermo * pdmeff,
-=======
->>>>>>> master
 				  double * pvecback
 				  );
 
@@ -676,10 +633,7 @@ extern "C" {
 					 struct thermo * pth,
 					 struct recombination * preco,
 					 struct reionization * preio,
-<<<<<<< HEAD
 					 struct dmeff_thermo * pdmeff,
-=======
->>>>>>> master
 					 double * pvecback
 					 );
 
@@ -695,10 +649,7 @@ extern "C" {
 				   struct background * pba,
 				   struct thermo * pth,
 				   struct recombination * prec,
-<<<<<<< HEAD
 				   struct dmeff_thermo * pdmeff,
-=======
->>>>>>> master
 				   double * pvecback
 				   );
 
@@ -707,10 +658,7 @@ extern "C" {
 						struct background * pba,
 						struct thermo * pth,
 						struct recombination * prec,
-<<<<<<< HEAD
             struct dmeff_thermo * pdmeff,
-=======
->>>>>>> master
 						double * pvecback
 						);
 
@@ -719,10 +667,7 @@ extern "C" {
 						struct background * pba,
 						struct thermo * pth,
 						struct recombination * prec,
-<<<<<<< HEAD
 						struct dmeff_thermo * pdmeff,
-=======
->>>>>>> master
 						double * pvecback
 						);
 
@@ -736,10 +681,7 @@ extern "C" {
 
   int thermodynamics_merge_reco_and_reio(
 					 struct precision * ppr,
-<<<<<<< HEAD
 					 struct background * pba,
-=======
->>>>>>> master
 					 struct thermo * pth,
 					 struct recombination * preco,
 					 struct reionization * preio
@@ -763,7 +705,6 @@ extern "C" {
                           double width,
                           double * result);
 
-<<<<<<< HEAD
   int thermodynamics_dmeff_init(struct background *pba,
                                 struct thermo *pth,
                                 struct dmeff_thermo *pdmeff);
@@ -788,8 +729,6 @@ extern "C" {
                                   void * parameters_and_workspace,
                                   ErrorMsg error_message);
 
-=======
->>>>>>> master
 #ifdef __cplusplus
 }
 #endif
@@ -826,11 +765,7 @@ extern "C" {
 
 //@{
 
-<<<<<<< HEAD
 #define _RECFAST_INTEG_SIZE_ 4
-=======
-#define _RECFAST_INTEG_SIZE_ 3
->>>>>>> master
 
 #define _Lambda_ 8.2245809
 #define _Lambda_He_ 51.3

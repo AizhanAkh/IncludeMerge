@@ -4,10 +4,7 @@
 #define __TRANSFER__
 
 #include "nonlinear.h"
-<<<<<<< HEAD
-=======
 #include "nonlinear_pt.h"
->>>>>>> master
 #include "hyperspherical.h"
 #include <sys/shm.h>
 #include <sys/stat.h>
@@ -276,10 +273,7 @@ extern "C" {
                     struct background * pba,
                     struct thermo * pth,
                     struct perturbs * ppt,
-<<<<<<< HEAD
-=======
                     struct nonlinear_pt * pnlpt,
->>>>>>> master
                     struct nonlinear * pnl,
                     struct transfers * ptr
                     );
@@ -299,10 +293,7 @@ extern "C" {
 
   int transfer_perturbation_copy_sources_and_nl_corrections(
                                                             struct perturbs * ppt,
-<<<<<<< HEAD
-=======
                                                             struct nonlinear_pt * pnlpt,
->>>>>>> master
                                                             struct nonlinear * pnl,
                                                             struct transfers * ptr,
                                                             double *** sources
@@ -317,10 +308,7 @@ extern "C" {
 
   int transfer_perturbation_sources_free(
                                          struct perturbs * ppt,
-<<<<<<< HEAD
-=======
                                          struct nonlinear_pt * pnlpt,
->>>>>>> master
                                          struct nonlinear * pnl,
                                          struct transfers * ptr,
                                          double *** sources
